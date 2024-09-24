@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasturi Kiranam - Grocery Store</title>
+    <link rel="stylesheet" href="{% static 'testapp/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Kasturi Kiranam</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/dynamic">Dynamic Content</a></li>
+                <li><a href="/form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Kasturi Kiranam</h2>
+            <p>Your one-stop shop for fresh groceries!</p>
+        </section>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="{% static 'images/product2.jpg.jfif' %}" alt="Fresh Vegetables">
+                    <h3>Fresh Vegetables</h3>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/product.jpg.jfif' %}" alt="Fruits">
+                    <h3>Fruits</h3>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/milk.jfif' %}" alt="Dairy Products">
+                    <h3>Dairy Products</h3>
+                </div>
+                <div class="product-item">
+                    <img src="{% static 'images/grain.jfif' %}" alt="Grains">
+                    <h3>Grains</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kasturi Kiranam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
